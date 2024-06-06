@@ -1,5 +1,5 @@
 async function fetchWords() {
-    const response = await fetch('https://raw.githubusercontent.com/AlizValko/wordleGame/main/words.txt');
+    const response = await fetch('https://raw.githubusercontent.com/AlizValko/wordle/main/words.txt');
     const text = await response.text();
     return text.split('\n').map(word => word.trim());
 }
